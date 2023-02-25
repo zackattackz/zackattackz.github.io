@@ -1,1 +1,140 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zachary Hanham</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zachary Hanham's Portfolio">
+    <meta name="author" content="Zachary Hanham">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			content: 'ZH';
+		}
+	</style>
+</head>
+<body>
+	<h1 class="title">Zachary Hanham</h1>
+	<img class="face-pic" src="img/face.jpg" alt="Avatar">
+	<div class="container">
+		<ul class="social">
+			<li><a href="mailto:z.hanham00@gmail.com"><i class="fa fa-send"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/zachary-hanham-3a58a0174/"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/zackattackz"><i class="fa fa-github"></i></a></li>
+		</ul>
+	</div>
+	<div class="intro section" id="about">
+		<div class="container">
+			<div class="units-row units-split wrap">
+				<div class="unit-80">
+					<h1>I am a<br><span id="typed"></span></h1>
+				</div>
+				<div class="intro-about">
+					<p>I am Zachary Hanham, or just Zach is fine :)</p>
+					<p>
+						I'm a 22-year-old developer who's passionate about making a difference through software.
+						I'm currently studying Computer Science at the University at Buffalo and my expertise lies in back-end development, particularly in the .NET ecosystem.
+						However, I'm always eager to learn and have worked with various other technologies. I've made it somewhat of a hobby to learn about all sorts of interesting programming languages and paradigms.
+						Open source software is the future of how we use computers, and I want to work towards making that future a reality.
+						Please let me know if I can be of any help to you, and thank you for reading.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="showcase-list section second" id="experiences">
+		<div class="container">
+			<h1>Work<br>Experiences</h1>
+			<ul class="work-list">
+				<li>2020-2021</li>
+				<li>VTR Technologies</li>
+				<li>Software Development Intern</li>
+			</ul>
+			<ul class="work-list">
+				<li>2019-2021</li>
+				<li>University at Buffalo</li>
+				<li>Undergraduate Teaching Assistant</li>
+			</ul>
+		</div>
+	</div>
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Technical<br>Skills</h1>
+			<ul class="skill-list">
+				<li>Languages</li>
+				<li>HTML / CSS / Javascript / Typescript</li>
+				<li>C# / Python / Go / Clojure / F#</li>
+				<li>Bash / Powershell</li>
+			</ul>
+			<ul class="skill-list">
+				<li>Databases</li>
+				<li>SQL Server / Entity Framework Core / CosmosDB</li>
+			</ul>
+			<ul class="skill-list">
+				<li>Frameworks</li>
+				<li>ASP.NET MVC / Razor Pages / Blazor</li>
+				<li>React / Vue</li>
+				<li>Bootstrap / Jquery</li>
+			</ul>
+			<ul class="skill-list">
+				<li>Other</li>
+				<li>Linux System Administration</li>
+				<li>Functional Programming / Object Oriented Programming</li>
+			</ul>
+		</div>
+	</div>
+	<div class="showcase-list section second" id="code-samples">
+		<div class="container">
+			<h1>Code<br/>Samples</h1>
+			<ul>
+				<li>C#</li>
+				<li><a href="https://github.com/zackattackz/FilterExpressionCreator/tree/SubclassFilters">FilterExpressionCreator (SubclassFilter feature)</a></li>
+				<li>A feature I am in the process of contributing to FSchick.FilterExpressionCreator. It would allow for the creation of subclass filters. (WIP)</li>
+			</ul>
+			<ul>
+				<li>Golang</li>
+				<li><a href="https://github.com/zackattackz/statikit-old">statikit</a></li>
+				<li>A command line program to render static templates with dynamic data (unfinished)</li>
+			</ul>
+			<ul>
+				<li>Typescript / Electron</li>
+				<li><a href="https://github.com/zackattackz/femme-gallery-manager">femme-gallery-manager</a></li>
+				<li>A GUI program powered by Electron. It was intended to be used as a way for a friend to upload images to Azure Blob storage, and re-render a static website with the new images (unfinished)</li>
+			</ul>
+		</div>
+	</div>
+	<div class="quote">
+		<div class="container">
+			<h1>上善若水。水善利万物而不争。<br/>
+				<span>-Dao De Jing, Chapter 8</span>
+			</h1>
+		</div>
+	</div>
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		strings: [
+			"Developer",
+			"Teacher",
+			"Learner",
+			"OSS Advocate",
+			"Daoist",
+			"DNB Head",
+			"Nature Lover",
+			"Cat Aficionado",
+			"Amateur Cook",
+			"Buffalonian"
+		],
+		typeSpeed:90,backDelay:1600,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
